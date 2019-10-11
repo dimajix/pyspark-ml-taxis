@@ -26,7 +26,7 @@ module "emr" {
   release = "emr-5.27.0"
   names   = ["kku"]
   # names = ["kku","cl1","cl2","cl3","cl4","cl5","cl6", "cl7","cl8"]
-  applications     = ["Spark", "Hadoop", "Hue", "Zeppelin", "Hive", "Zookeeper"]
+  applications     = ["Spark", "Hadoop", "Hue", "Hive", "Zookeeper"]
   master_type      = "m4.xlarge"
   master_ebs_size  = "40"
   master_bid_price = "0.09"

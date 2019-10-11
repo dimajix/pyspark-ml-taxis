@@ -103,8 +103,8 @@ env SLEEP_TIME=10
 
 env DAEMON="jupyter-notebook-server"
 env DESC="Jupyter Notebook Server"
-env EXEC_PATH="/usr/local/bin/jupyter-notebook"
-env SVC_USER="hadoop"
+env EXEC_PATH="${ANACONDA_PREFIX}/bin/jupyter-notebook"
+env SVC_USER="${ANACONDA_USER}"
 env DAEMON_FLAGS="--NotebookApp.ip=0.0.0.0 --NotebookApp.port=8899"
 env PIDFILE="/var/run/jupyter/\${DAEMON}.pid"
 env LOGFILE="/var/log/jupyter/\${DAEMON}.out"
